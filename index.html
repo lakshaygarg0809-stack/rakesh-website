@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakesh Electronics Centre & Furniture House</title>
+<style>
+:root{--red:#b88916;--red2:#d4a017;--ink:#171717;--muted:#6b7280;--line:#e5e7eb;--soft:#f7f7f8;--card:#fff;--gold:#d4a017;--green:#15803d;--dark:#101114}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff}button,input,select{font:inherit}button{cursor:pointer}.wrap{max-width:1180px;margin:auto;padding:0 20px}.top{background:linear-gradient(90deg,#0b0b0c,#21180b,#0b0b0c);color:#fff;font-size:13px;border-bottom:1px solid #5f4610}.top .wrap{display:flex;justify-content:space-between;gap:12px;padding:8px 20px}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid #ead9ad}.navin{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:78px}.brand{display:flex;align-items:center;gap:12px}.logo{width:47px;height:47px;border-radius:13px;background:linear-gradient(135deg,#171717,#3a2a0b);color:#f5c94a;display:grid;place-items:center;font-weight:1000;font-size:24px;border:1px solid #d4a017;box-shadow:0 7px 20px rgba(120,80,0,.18)}.brand strong{display:block;font-size:22px;font-weight:1000;letter-spacing:1.5px;line-height:1;background:linear-gradient(90deg,#a87508,#e1b93f,#a87508);-webkit-background-clip:text;background-clip:text;color:transparent}.brand small{color:#555;font-weight:700;font-size:11px;letter-spacing:.3px}.links{display:flex;gap:22px;font-weight:800;font-size:14px}.links a{text-decoration:none;color:var(--ink)}.links a:hover{color:#a87508}.actions{display:flex;gap:8px}.iconbtn,.pillbtn{border:1px solid #ded3b8;background:#fff;border-radius:12px;padding:10px 12px}.cartbtn{position:relative}.badge{position:absolute;right:-5px;top:-7px;background:#a87508;color:#fff;border-radius:99px;font-size:11px;padding:2px 6px}.hero{background:radial-gradient(circle at 80% 15%,#3a2b0e 0,#171513 27%,#0e0e0f 58%,#080808 100%);color:#fff;padding:58px 0 36px}.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}.eyebrow{display:inline-flex;background:#21190a;color:#f4ca55;border:1px solid #6b5117;padding:7px 11px;border-radius:999px;font-weight:900;font-size:12px}.hero h1{font-size:clamp(36px,5vw,64px);line-height:1.02;margin:16px 0 15px;letter-spacing:-2.5px}.hero h1 span{color:#f0c54a}.hero p{font-size:18px;line-height:1.6;color:#d1d1d1;max-width:650px}.heroBtns{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.primary{border:0;background:linear-gradient(135deg,#a87508,#e2b83e);color:#111;padding:13px 18px;border-radius:12px;font-weight:900;box-shadow:0 8px 20px rgba(168,117,8,.2)}.secondary{border:1px solid #80631f;background:#17130b;color:#f4ca55;padding:13px 18px;border-radius:12px;font-weight:900}.heroCard{border-radius:24px;background:linear-gradient(145deg,#181818,#29200e);color:#fff;padding:24px;border:1px solid #725717;box-shadow:0 20px 60px rgba(0,0,0,.35)}.saleTag{color:#f4ca55;font-weight:900;font-size:12px;letter-spacing:1px}.heroCard h2{font-size:31px;margin:10px 0}.timer{display:flex;gap:8px;margin:20px 0}.timebox{background:#211d16;border:1px solid #51421f;border-radius:12px;padding:10px 12px;text-align:center;min-width:62px}.timebox b{font-size:21px;display:block;color:#f4ca55}.timebox span{font-size:10px;color:#a1a1aa}.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}.trust div{background:#181818;border:1px solid #403820;padding:15px;border-radius:14px}.trust b{display:block;color:#f4ca55}.trust span{font-size:12px;color:#aaa}section{padding:46px 0}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}.sectionHead h2{margin:0;font-size:30px}.sectionHead p{margin:5px 0 0;color:var(--muted)}.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{padding:20px 14px;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:left;transition:.2s}.cat:hover{transform:translateY(-2px);border-color:#d4a017;box-shadow:0 10px 24px rgba(168,117,8,.08)}.catIcon{font-size:30px;margin-bottom:12px}.cat b{display:block}.cat small{color:var(--muted)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.search{flex:1;min-width:220px;border:1px solid var(--line);padding:13px 14px;border-radius:12px}.select{border:1px solid var(--line);padding:13px 14px;border-radius:12px;background:#fff}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);position:relative;transition:.2s}.product:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.07)}.prodVisual{height:180px;background:linear-gradient(145deg,#f4f4f5,#e8e8eb);display:grid;place-items:center;font-size:68px}.offer{position:absolute;top:10px;left:10px;background:#a87508;color:#fff;padding:5px 8px;border-radius:7px;font-size:11px;font-weight:900}.prodBody{padding:14px}.prodBody h3{font-size:15px;margin:0 0 7px}.spec{font-size:12px;color:var(--muted);min-height:34px}.price{margin-top:10px;display:flex;align-items:baseline;gap:8px}.price b{font-size:20px}.mrp{text-decoration:line-through;color:#9ca3af;font-size:12px}.prodActions{display:flex;gap:8px;margin-top:12px}.prodActions button{flex:1;padding:10px;border-radius:10px;font-weight:800;border:1px solid var(--line);background:#fff}.prodActions .buy{background:#a87508;border-color:#a87508;color:#fff}.sale{background:#fbf7ed}.saleGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:center}.saleCopy{background:#fff;border:1px solid #ead9ad;border-radius:22px;padding:28px}.saleCopy h2{font-size:35px;margin:8px 0}.saleCopy p{color:#666}.saleVisual{min-height:300px;border-radius:22px;background:linear-gradient(135deg,#111,#382b10);color:#fff;padding:32px;display:flex;flex-direction:column;justify-content:end;border:1px solid #725717}.saleVisual .big{font-size:56px;font-weight:900;line-height:.9;color:#f4ca55}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.benefit{padding:22px;border:1px solid var(--line);border-radius:18px}.benefit b{display:block;font-size:17px;margin:10px 0 6px}.benefit p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}.footer{background:#111;color:#fff;padding:40px 0;border-top:1px solid #5f4610}.footerGrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}.footer p,.footer small{color:#aaa}.footer h3{margin-top:0;color:#f4ca55}.admin{background:#f7f7f8}.adminGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.stat{background:#fff;border:1px solid var(--line);padding:18px;border-radius:16px}.stat span{color:var(--muted);font-size:12px}.stat b{display:block;font-size:26px;margin-top:4px}.orderList{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:auto}.orderRow{display:grid;grid-template-columns:1fr 1.4fr .8fr .8fr;gap:12px;padding:15px 17px;border-bottom:1px solid var(--line);font-size:14px;min-width:650px}.orderRow.head{font-weight:900;background:#fafafa}.status{font-weight:800;color:var(--green)}.modal{position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:50;display:none;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modalCard{width:min(680px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:22px;padding:24px}.modalHead{display:flex;justify-content:space-between;gap:12px}.close{border:0;background:#f3f4f6;border-radius:10px;width:40px;height:40px}.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field input,.field select{border:1px solid var(--line);border-radius:10px;padding:12px}.cartItem{display:grid;grid-template-columns:1fr auto;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.empty{color:var(--muted);padding:20px 0}.toast{position:fixed;bottom:22px;right:22px;background:#111;color:#fff;padding:12px 16px;border-radius:12px;z-index:80;display:none}.toast.show{display:block}.mobileMenu{display:none}
+@media(max-width:900px){.heroGrid,.saleGrid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.cats{grid-template-columns:repeat(3,1fr)}.trust{grid-template-columns:repeat(2,1fr)}.links{display:none}.mobileMenu{display:block}.footerGrid{grid-template-columns:1fr 1fr}.adminGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.wrap{padding:0 14px}.top .wrap{padding:8px 14px}.hero{padding-top:36px}.hero h1{letter-spacing:-1.5px}.products{grid-template-columns:1fr 1fr;gap:10px}.prodVisual{height:135px;font-size:48px}.prodBody{padding:11px}.prodBody h3{font-size:13px}.cats{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:1fr}.footerGrid{grid-template-columns:1fr}.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.navin{min-height:62px}.brand small{font-size:10px}.brand strong{font-size:14px}.actions .iconbtn{padding:9px}.hero p{font-size:16px}.timer{gap:5px}.timebox{min-width:54px;padding:8px 5px}.timebox b{font-size:18px}}
+</style>
+<style>
+.catalog{background:#faf8f2}.catalogBlock{margin-top:24px}.catalogBlock h3{font-size:22px;margin:0 0 12px}.slotGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.productSlot{min-height:190px;border:1px dashed #c9b77d;border-radius:18px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;transition:.2s}.productSlot:hover{border-color:#a87508;box-shadow:0 10px 25px rgba(168,117,8,.08);transform:translateY(-2px)}.slotIcon{width:58px;height:58px;border-radius:16px;background:#171717;color:#f4ca55;display:grid;place-items:center;font-size:28px;margin-bottom:12px}.productSlot b{font-size:15px}.productSlot span{font-size:12px;color:#777;margin-top:5px}@media(max-width:900px){.slotGrid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.slotGrid{grid-template-columns:1fr 1fr;gap:10px}.productSlot{min-height:165px;padding:14px}.slotIcon{width:48px;height:48px;font-size:23px}}
+</style>
+<style>
+.storeSection{background:#faf8f2}.storeGrid{display:grid;grid-template-columns:1.35fr .85fr .85fr .85fr;gap:14px}.storeCard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;min-height:230px;display:flex;flex-direction:column;align-items:flex-start}.storeCard h3{margin:10px 0 8px;font-size:19px}.storeCard p{color:var(--muted);line-height:1.55;font-size:14px;margin:0 0 12px}.storeMap{background:linear-gradient(145deg,#171717,#2b210d);color:#fff;border-color:#6f5518}.storeMap p{color:#d0d0d0}.mapIcon,.storeIcon{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:27px;background:#f7f0df;color:#a87508}.storeMap .mapIcon{background:#2a220f}.storeHint{font-size:13px!important}.storeCard .primary,.storeCard .secondary{margin-top:auto}.financeBadge{display:inline-flex;margin-top:6px;padding:8px 10px;border-radius:9px;background:#f7f0df;color:#8b6408;font-size:11px;font-weight:900;letter-spacing:.4px}@media(max-width:900px){.storeGrid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.storeGrid{grid-template-columns:1fr}.storeCard{min-height:200px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>🏪 Rakesh Electronics Centre × Rakesh Furniture House</span><span>📞 9876364394 • 9779246394</span></div></div>
+
+<nav class="nav"><div class="wrap navin">
+<a class="brand" href="#home" style="color:inherit;text-decoration:none">
+<div class="logo">R</div>
+<div><strong>RAKESH</strong><small>Electronics • Furniture</small></div>
+</a>
+<div class="links">
+<a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#sale">Festival Sale</a><a href="#orders">My Orders</a>
+</div>
+<div class="actions">
+<button class="iconbtn" id="adminBtn" title="Owner login">⚙️</button>
+<button class="iconbtn cartbtn" id="cartBtn">🛒<span class="badge" id="cartCount">0</span></button>
+</div>
+</div></nav>
+
+<main id="home">
+<section class="hero"><div class="wrap heroGrid">
+<div>
+<span class="eyebrow">✨ ONE PLACE FOR YOUR HOME</span>
+<h1>Upgrade your home.<br><span>Love the deal.</span></h1>
+<p>Explore electronics and furniture from Rakesh — with attractive offers, easy ordering and a simple way to discover what fits your home.</p>
+<div class="heroBtns">
+<button class="primary" data-scroll="#shop">Shop Products →</button>
+<button class="secondary" data-scroll="#sale">🔥 View Sale</button>
+</div>
+<div class="trust">
+<div><b>🛵 Easy Delivery</b><span>Order support from our store</span></div>
+<div><b>💳 Easy Payments</b><span>Flexible payment options</span></div>
+<div><b>🛠️ Product Support</b><span>Ask before you buy</span></div>
+<div><b>💬 WhatsApp</b><span>Quick product enquiry</span></div>
+</div>
+</div>
+
+<div class="heroCard">
+<div class="saleTag">FESTIVAL OFFER • DEMO</div>
+<h2>Big Home Sale</h2>
+<p style="color:#c9cbd1">Special prices across selected electronics & furniture.</p>
+<div class="timer" id="timer">
+<div class="timebox"><b>08</b><span>DAYS</span></div>
+<div class="timebox"><b>14</b><span>HRS</span></div>
+<div class="timebox"><b>32</b><span>MIN</span></div>
+<div class="timebox"><b>18</b><span>SEC</span></div>
+</div>
+<button class="primary" data-scroll="#shop" style="width:100%">Explore Deals</button>
+</div>
+</div></section>
+
+<section id="categories"><div class="wrap">
+<div class="sectionHead"><div>
+<h2>Shop by category</h2>
+<p>Everything customers commonly look for at Rakesh.</p>
+</div></div>
+<div class="cats" id="catGrid"></div>
+</div></section>
+
+<section class="catalog" id="catalog"><div class="wrap">
+<div class="sectionHead"><div>
+<span class="eyebrow">YOUR REAL INVENTORY</span>
+<h2>Product sections</h2>
+<p>These are ready-made spaces for your own product photos, names, prices and specifications.</p>
+</div></div>
+
+<div class="catalogBlock"><h3>📺 Electronics</h3>
+<div class="slotGrid">
+<div class="productSlot"><div class="slotIcon">📺</div><b>Televisions</b><span>Add your TV products here</span></div>
+<div class="productSlot"><div class="slotIcon">🧊</div><b>Refrigerators</b><span>Add your refrigerator products here</span></div>
+<div class="productSlot"><div class="slotIcon">🧺</div><b>Washing Machines</b><span>Add your washing machine products here</span></div>
+<div class="productSlot"><div class="slotIcon">❄️</div><b>AC & Cooling</b><span>Add your cooling products here</span></div>
+<div class="productSlot"><div class="slotIcon">🍳</div><b>Kitchen Appliances</b><span>Add your kitchen products here</span></div>
+<div class="productSlot"><div class="slotIcon">🔊</div><b>Audio</b><span>Add speakers, soundbars and more</span></div>
+<div class="productSlot"><div class="slotIcon">💨</div><b>Fans & Coolers</b><span>Add your cooling products here</span></div>
+<div class="productSlot"><div class="slotIcon">⚡</div><b>Other Electronics</b><span>Add more electronic products here</span></div>
+</div></div>
+
+<div class="catalogBlock"><h3>🛋️ Furniture</h3>
+<div class="slotGrid">
+<div class="productSlot"><div class="slotIcon">🛋️</div><b>Sofas & Living</b><span>Add sofa and living-room products</span></div>
+<div class="productSlot"><div class="slotIcon">🛏️</div><b>Beds & Bedroom</b><span>Add beds and bedroom products</span></div>
+<div class="productSlot"><div class="slotIcon">🍽️</div><b>Dining</b><span>Add dining tables and sets</span></div>
+<div class="productSlot"><div class="slotIcon">🚪</div><b>Wardrobes</b><span>Add wardrobes and storage</span></div>
+<div class="productSlot"><div class="slotIcon">🪑</div><b>Chairs & Tables</b><span>Add chairs and table products</span></div>
+<div class="productSlot"><div class="slotIcon">💼</div><b>Office Furniture</b><span>Add office furniture products</span></div>
+<div class="productSlot"><div class="slotIcon">🏠</div><b>Home Furniture</b><span>Add other home furniture here</span></div>
+<div class="productSlot"><div class="slotIcon">＋</div><b>More Furniture</b><span>Reserve this section for new products</span></div>
+</div></div>
+</div></section>
+
+<section id="shop"><div class="wrap">
+<div class="sectionHead"><div>
+<h2>Featured products</h2>
+<p>Demo catalogue — prices and products can be replaced with your real inventory.</p>
+</div></div>
+<div class="toolbar">
+<input id="search" class="search" placeholder="Search TVs, sofa, fridge, bed..." aria-label="Search products">
+<select id="filter" class="select">
+<option value="all">All products</option>
+<option value="electronics">Electronics</option>
+<option value="furniture">Furniture</option>
+<option value="sale">On sale</option>
+</select>
+<select id="sort" class="select">
+<option value="featured">Featured</option>
+<option value="low">Price: low to high</option>
+<option value="high">Price: high to low</option>
+</select>
+</div>
+<div class="products" id="products"></div>
+</div></section>
+
+<section id="sale" class="sale"><div class="wrap saleGrid">
+<div class="saleCopy">
+<span class="eyebrow">🔥 FESTIVAL SALE</span>
+<h2>Make room for something new.</h2>
+<p>Run your own seasonal campaigns from the admin side — change banners, sale prices, coupon codes and expiry dates without changing the storefront design.</p>
+<button class="primary" data-scroll="#shop">Shop sale items</button>
+</div>
+<div class="saleVisual">
+<div style="color:#fca5a5;font-weight:800">RAKESH HOME FEST</div>
+<div class="big">UP TO<br>30% OFF*</div>
+<p style="color:#c9cbd1">*Demo offer. Replace with your actual campaign terms.</p>
+</div>
+</div></section>
+
+<section id="store" class="storeSection"><div class="wrap">
+<div class="sectionHead"><div>
+<span class="eyebrow">📍 VISIT US OFFLINE</span>
+<h2>Visit Rakesh Electronics Centre</h2>
+<p>See products in person, discuss your requirements with our team and book your product for purchase.</p>
+</div></div>
+
+<div class="storeGrid">
+<div class="storeCard storeMap">
+<div class="mapIcon">📍</div>
+<div>
+<h3>Rakesh Electronics Centre</h3>
+<p>📍 Main Bazar, Sehna, District Barnala, Punjab</p>
+<p>📞 9876364394 &nbsp;•&nbsp; 9779246394</p>
+<p class="storeHint">Customers can visit the showroom to view products, compare options and get help choosing the right item.</p>
+</div>
+<button class="primary" id="mapBtn">Get Directions ↗</button>
+</div>
+
+<div class="storeCard">
+<div class="storeIcon">🛍️</div>
+<h3>Book online. Visit offline.</h3>
+<p>Select a product online and contact the store to reserve it for viewing or purchase.</p>
+<button class="secondary" data-scroll="#shop">View Products</button>
+</div>
+
+<div class="storeCard">
+<div class="storeIcon">💳</div>
+<h3>EMI available</h3>
+<p>We support EMI options for eligible purchases. Ask our store team about available plans and required documents.</p>
+<div class="financeBadge">BAJAJ FINANCE SUPPORTED</div>
+</div>
+
+<div class="storeCard">
+<div class="storeIcon">🤖</div>
+<h3>AI WhatsApp Assistance</h3>
+<p>Get quick help with product enquiries, specifications, prices, store visits and order questions on WhatsApp.</p>
+<button class="primary" id="waBtn">Chat on WhatsApp</button>
+</div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="sectionHead"><div>
+<h2>Why customers can love this</h2>
+<p>Designed around a local store experience, not a complicated marketplace.</p>
+</div></div>
+<div class="benefits">
+<div class="benefit">🏠<b>Everything for the home</b><p>Electronics and furniture live together, so customers can shop for a complete home setup in one place.</p></div>
+<div class="benefit">⚡<b>Fast product discovery</b><p>Search, categories, sale labels and specifications help customers find the right item quickly.</p></div>
+<div class="benefit">🤝<b>Local-store connection</b><p>Customers can place an online order or use WhatsApp to ask questions before purchasing.</p></div>
+</div>
+</div></section>
+
+<section id="orders" class="admin"><div class="wrap">
+<div class="sectionHead"><div>
+<h2>Order centre <span style="font-size:13px;color:var(--red)">DEMO</span></h2>
+<p>This is the owner-facing view that can later connect to a real database.</p>
+</div></div>
+<div class="adminGrid">
+<div class="stat"><span>Orders today</span><b id="statOrders">12</b></div>
+<div class="stat"><span>Sales today</span><b>₹48,650</b></div>
+<div class="stat"><span>Pending</span><b id="statPending">5</b></div>
+<div class="stat"><span>Products</span><b id="statProducts">8</b></div>
+</div>
+<div class="orderList">
+<div class="orderRow head"><div>Order</div><div>Customer</div><div>Amount</div><div>Status</div></div>
+<div class="orderRow"><div>#REC-1042</div><div>Demo Customer</div><div>₹34,999</div><div class="status">Confirmed</div></div>
+<div class="orderRow"><div>#RFH-1041</div><div>Demo Customer</div><div>₹21,500</div><div class="status">Packed</div></div>
+<div class="orderRow"><div>#REC-1040</div><div>Demo Customer</div><div>₹12,999</div><div class="status">Out for delivery</div></div>
+</div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap footerGrid">
+<div><h3>RAKESH</h3><p>Electronics Centre × Furniture House</p><small>Online storefront prototype. Replace demo data with your real business details.</small></div>
+<div><h3>Shop</h3><p>Electronics<br>Furniture<br>Festival Offers<br>New Arrivals</p></div>
+<div><h3>Connect</h3><p>WhatsApp enquiries<br>Store support<br>Order assistance</p></div>
+</div></footer>
+
+<div class="modal" id="modal"><div class="modalCard" id="modalContent"></div></div>
+<div class="toast" id="toast" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL='https://hvjnjnaibeluvtuiogiy.supabase.co';
+const SUPABASE_ANON_KEY='sb_publishable__WuYBqckhhqpb6ofHL_CpQ_UAQKcI-5';
+const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
+window.rakeshBackend={client:sb,connected:true};
+
+let products=JSON.parse(localStorage.getItem('rakeshProducts')||'null')||[
+{id:1,name:'55” 4K Smart LED TV',cat:'electronics',category:'TVs',price:38999,mrp:45999,emoji:'📺',spec:'4K • Smart TV • Wi-Fi • Demo stock',sale:true},
+{id:2,name:'Double Door Refrigerator',cat:'electronics',category:'Refrigerators',price:32990,mrp:37990,emoji:'🧊',spec:'Frost Free • Energy efficient • Demo stock',sale:true},
+{id:3,name:'7.5 kg Fully Automatic Washing Machine',cat:'electronics',category:'Washing Machines',price:23990,mrp:27990,emoji:'🧺',spec:'Fully automatic • Multiple modes',sale:true},
+{id:4,name:'1.5 Ton Split AC',cat:'electronics',category:'Air Conditioners',price:34990,mrp:39990,emoji:'❄️',spec:'1.5 Ton • Inverter • Demo stock',sale:true},
+{id:5,name:'3-Seater Premium Sofa',cat:'furniture',category:'Sofas',price:27999,mrp:32999,emoji:'🛋️',spec:'Fabric finish • 3-seater • Custom colours',sale:true},
+{id:6,name:'Queen Size Storage Bed',cat:'furniture',category:'Beds',price:31990,mrp:36990,emoji:'🛏️',spec:'Engineered wood • Storage • Queen size',sale:true},
+{id:7,name:'6-Seater Dining Table Set',cat:'furniture',category:'Dining',price:25990,mrp:29990,emoji:'🍽️',spec:'Table + 6 chairs • Modern finish',sale:false},
+{id:8,name:'Sliding Door Wardrobe',cat:'furniture',category:'Wardrobes',price:21990,mrp:24990,emoji:'🚪',spec:'Large storage • Sliding doors',sale:false}
+];
+
+function saveProducts(){
+  localStorage.setItem('rakeshProducts',JSON.stringify(products));
+}
+
+const cats=[
+['📺','Televisions','electronics'],
+['🧊','Refrigerators','electronics'],
+['🧺','Washing Machines','electronics'],
+['❄️','AC & Cooling','electronics'],
+['🛋️','Sofas & Living','furniture'],
+['🛏️','Beds & Bedroom','furniture'],
+['🍽️','Dining','furniture'],
+['🚪','Wardrobes','furniture'],
+['💨','Fans & Coolers','electronics'],
+['🍳','Kitchen Appliances','electronics'],
+['🔊','Audio','electronics'],
+['🪑','Chairs & Tables','furniture']
+];
+
+let cart=[];
+let orders=[];
+
+const $=s=>document.querySelector(s);
+const $$=s=>[...document.querySelectorAll(s)];
+
+function money(n){
+  return '₹'+n.toLocaleString('en-IN');
+}
+
+function renderCats(){
+  $('#catGrid').innerHTML=cats.map(c=>`
+    <button class="cat" data-cat="${c[2]}" data-searchcat="${c[1]}">
+      <div class="catIcon">${c[0]}</div>
+      <b>${c[1]}</b>
+      <small>${c[2]==='electronics'?'Electronics':'Furniture'}</small>
+    </button>
+  `).join('');
+
+  $$('#catGrid .cat').forEach(b=>b.addEventListener('click',()=>{
+    $('#filter').value=b.dataset.cat;
+    $('#search').value=b.dataset.searchcat;
+    renderProducts();
+    document.querySelector('#shop').scrollIntoView({behavior:'smooth'});
+  }));
+}
+
+function renderProducts(){
+  let q=$('#search').value.toLowerCase().trim();
+  let f=$('#filter').value;
+  let s=$('#sort').value;
+
+  let arr=products.filter(p=>
+    (!q||[p.name,p.category,p.spec].join(' ').toLowerCase().includes(q)) &&
+    (f==='all'||p.cat===f||(f==='sale'&&p.sale))
+  );
+
+  if(s==='low')arr.sort((a,b)=>a.price-b.price);
+  if(s==='high')arr.sort((a,b)=>b.price-a.price);
+
+  $('#products').innerHTML=arr.map(p=>`
+    <article class="product">
+      <div class="prodVisual">
+        ${p.image?`<img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">`:p.emoji}
+      </div>
+      ${p.sale?'<div class="offer">SALE</div>':''}
+      <div class="prodBody">
+        <h3>${p.name}</h3>
+        <div class="spec">${p.spec}</div>
+        <div class="price">
+          <b>${money(p.price)}</b>
+          <span class="mrp">${money(p.mrp)}</span>
+        </div>
+        <div class="prodActions">
+          <button data-view="${p.id}">Details</button>
+          <button class="buy" data-add="${p.id}">Add</button>
+        </div>
+      </div>
+    </article>
+  `).join('')||'<div class="empty">No matching products. Try another search.</div>';
+
+  $$('[data-add]').forEach(b=>b.addEventListener('click',()=>add(+b.dataset.add)));
+  $$('[data-view]').forEach(b=>b.addEventListener('click',()=>productModal(+b.dataset.view)));
+
+  $('#statProducts').textContent=products.length;
+}
+
+function add(id){
+  const p=products.find(x=>x.id===id);
+  let i=cart.find(x=>x.id===id);
+
+  if(i)i.qty++;
+  else cart.push({id,qty:1});
+
+  updateCart();
+  toast(`${p.name} added to cart`);
+}
+
+function updateCart(){
+  let count=cart.reduce((a,b)=>a+b.qty,0);
+  $('#cartCount').textContent=count;
+}
+
+function productModal(id){
+  const p=products.find(x=>x.id===id);
+
+  openModal(`
+    <div class="modalHead">
+      <div>
+        <span class="eyebrow">${p.cat==='electronics'?'ELECTRONICS':'FURNITURE'}</span>
+        <h2>${p.name}</h2>
+      </div>
+      <button class="close" data-close>✕</button>
+    </div>
+
+    <div class="prodVisual" style="height:190px;border-radius:16px;margin:14px 0">
+      ${p.image?`<img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">`:p.emoji}
+    </div>
+
+    <p style="color:#666">${p.spec}</p>
+
+    <div class="price">
+      <b>${money(p.price)}</b>
+      <span class="mrp">${money(p.mrp)}</span>
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:18px">
+      <button class="primary" data-addmodal="${p.id}">Add to cart</button>
+      <button class="secondary" data-enquire="${p.id}">WhatsApp enquiry</button>
+    </div>
+  `);
+
+  $('[data-addmodal]').addEventListener('click',()=>{
+    add(id);
+    closeModal();
+  });
+
+  $('[data-enquire]').addEventListener('click',()=>{
+    toast('WhatsApp enquiry is ready for the live version.');
+  });
+}
+
+function cartModal(){
+  let html=cart.length?
+    cart.map(i=>{
+      let p=products.find(x=>x.id===i.id);
+      return `
+        <div class="cartItem">
+          <div>
+            <b>${p.name}</b>
+            <div style="color:#777;font-size:12px">${money(p.price)} × ${i.qty}</div>
+          </div>
+          <button class="secondary" data-remove="${p.id}">Remove</button>
+        </div>
+      `;
+    }).join('')
+    :
+    '<div class="empty">Your cart is empty.</div>';
+
+  let total=cart.reduce(
+    (a,i)=>a+products.find(p=>p.id===i.id).price*i.qty,
+    0
+  );
+
+  openModal(`
+    <div class="modalHead">
+      <div>
+        <h2>Your cart</h2>
+        <p style="color:#777">Review items before checkout.</p>
+      </div>
+      <button class="close" data-close>✕</button>
+    </div>
+
+    ${html}
+
+    <div style="display:flex;justify-content:space-between;font-size:19px;font-weight:900;padding:18px 0">
+      <span>Total</span>
+      <span>${money(total)}</span>
+    </div>
+
+    ${cart.length?'<button class="primary" id="checkout" style="width:100%">Proceed to checkout</button>':''}
+  `);
+
+  $$('[data-remove]').forEach(b=>b.addEventListener('click',()=>{
+    cart=cart.filter(x=>x.id!==+b.dataset.remove);
+    updateCart();
+    cartModal();
+  }));
+
+  if($('#checkout'))$('#checkout').addEventListener('click',checkout);
+}
+function checkout(){openModal(`<div class="modalHead"><div><h2>Checkout</h2><p style="color:#777">Demo checkout — no payment is taken here.</p></div><button class="close" data-close>✕</button></div><form id="checkoutForm"><div class="formGrid"><label class="field"><span>Name</span><input required name="name" placeholder="Customer name"></label><label class="field"><span>WhatsApp / Phone</span><input required name="phone" placeholder="10-digit number"></label><label class="field full"><span>Delivery address</span><input required name="address" placeholder="Address"></label><label class="field"><span>Payment preference</span><select name="payment"><option>Cash / store confirmation</option><option>UPI</option><option>Card / online payment</option></select></label></div><button class="primary" style="width:100%;margin-top:16px">Place demo order</button></form></div>`);$('#checkoutForm').addEventListener('submit',e=>{e.preventDefault();let fd=new FormData(e.target);orders.push({id:'REC-'+(1043+orders.length),name:fd.get('name'),amount:cart.reduce((a,i)=>a+products.find(p=>p.id===i.id).price*i.qty,0),status:'New'});cart=[];updateCart();closeModal();toast('Order received! This demo is ready to connect to a real order database.');$('#statOrders').textContent=12+orders.length;$('#statPending').textContent=5+orders.length;});}
+
+function adminModal(){openModal(`<div class="modalHead"><div><span class="eyebrow">OWNER VIEW</span><h2>Rakesh Admin</h2><p style="color:#777">Manage your catalogue from one place. Photos and product details are saved in this browser.</p></div><button class="close" data-close>✕</button></div><div class="adminGrid"><div class="stat"><span>Total products</span><b>${products.length}</b></div><div class="stat"><span>Sale products</span><b>${products.filter(p=>p.sale).length}</b></div><div class="stat"><span>Demo orders</span><b>${12+orders.length}</b></div><div class="stat"><span>Pending</span><b>${5+orders.length}</b></div></div><form id="productForm"><h3>Add a product</h3><div class="formGrid"><label class="field"><span>Product name</span><input required name="name" placeholder="e.g. 55 inch Smart TV"></label><label class="field"><span>Category</span><select name="category"><option value="TVs">Televisions</option><option value="Refrigerators">Refrigerators</option><option value="Washing Machines">Washing Machines</option><option value="Air Conditioners">AC & Cooling</option><option value="Sofas">Sofas & Living</option><option value="Beds">Beds & Bedroom</option><option value="Dining">Dining</option><option value="Wardrobes">Wardrobes</option><option value="Other">Other</option></select></label><label class="field"><span>Department</span><select name="cat"><option value="electronics">Electronics</option><option value="furniture">Furniture</option></select></label><label class="field"><span>Selling price (₹)</span><input required type="number" min="0" name="price" placeholder="29999"></label><label class="field"><span>MRP (₹)</span><input required type="number" min="0" name="mrp" placeholder="34999"></label><label class="field"><span>Product photo</span><input type="file" accept="image/*" name="imageFile"></label><label class="field full"><span>Specifications</span><input name="spec" placeholder="Size, warranty, colour, features..." ></label><label class="field full" style="flex-direction:row;align-items:center"><input type="checkbox" name="sale" style="width:18px;height:18px"> <span>Show as sale product</span></label></div><button class="primary" style="width:100%;margin-top:16px">＋ Add Product</button></form><div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line)"><h3>Your products</h3><div id="adminProducts" style="display:grid;gap:8px">${products.map(p=>`<div style="display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:10px"><span><b>${p.name}</b><small style="display:block;color:#777">${money(p.price)} • ${p.category}</small></span><button class="secondary" data-edit-product="${p.id}">Edit</button><button class="secondary" data-delete-product="${p.id}">Delete</button></div>`).join('')}</div></div>`);$('#productForm').addEventListener('submit',e=>{e.preventDefault();let fd=new FormData(e.target),file=fd.get('imageFile');let finish=image=>{let id=Date.now();products.push({id,name:fd.get('name'),cat:fd.get('cat'),category:fd.get('category'),price:Number(fd.get('price')),mrp:Number(fd.get('mrp')),emoji:fd.get('cat')==='furniture'?'🛋️':'📦',spec:fd.get('spec')||'Product specifications available in store',sale:fd.get('sale')==='on',image:image||''});saveProducts();renderProducts();closeModal();toast('Product added successfully')};if(file&&file.size){let reader=new FileReader();reader.onload=()=>finish(reader.result);reader.readAsDataURL(file)}else finish('')});$$('[data-delete-product]').forEach(b=>b.addEventListener('click',()=>{products=products.filter(p=>p.id!==+b.dataset.deleteProduct);saveProducts();renderProducts();adminModal()}));$$('[data-edit-product]').forEach(b=>b.addEventListener('click',()=>editProduct(+b.dataset.editProduct)))}
+
+function editProduct(id){const p=products.find(x=>x.id===id);openModal(`<div class="modalHead"><div><span class="eyebrow">EDIT PRODUCT</span><h2>${p.name}</h2><p style="color:#777">Update price, category, specifications or sale status.</p></div><button class="close" data-close>✕</button></div><form id="editProductForm"><div class="formGrid"><label class="field"><span>Product name</span><input required name="name" value="${p.name.replace(/"/g,'&quot;')}"></label><label class="field"><span>Category</span><select name="category">${['TVs','Refrigerators','Washing Machines','Air Conditioners','Sofas','Beds','Dining','Wardrobes','Other'].map(c=>`<option ${c===p.category?'selected':''}>${c}</option>`).join('')}</select></label><label class="field"><span>Department</span><select name="cat"><option value="electronics" ${p.cat==='electronics'?'selected':''}>Electronics</option><option value="furniture" ${p.cat==='furniture'?'selected':''}>Furniture</option></select></label><label class="field"><span>Selling price (₹)</span><input required type="number" min="0" name="price" value="${p.price}"></label><label class="field"><span>MRP (₹)</span><input required type="number" min="0" name="mrp" value="${p.mrp}"></label><label class="field"><span>Replace photo (optional)</span><input type="file" accept="image/*" name="imageFile"></label><label class="field full"><span>Specifications</span><input name="spec" value="${(p.spec||'').replace(/"/g,'&quot;')}"></label><label class="field full" style="flex-direction:row;align-items:center"><input type="checkbox" name="sale" ${p.sale?'checked':''} style="width:18px;height:18px"> <span>Show as sale product</span></label></div><button class="primary" style="width:100%;margin-top:16px">Save Changes</button></form>`);$('#editProductForm').addEventListener('submit',e=>{e.preventDefault();let fd=new FormData(e.target),file=fd.get('imageFile');let finish=image=>{Object.assign(p,{name:fd.get('name'),cat:fd.get('cat'),category:fd.get('category'),price:Number(fd.get('price')),mrp:Number(fd.get('mrp')),spec:fd.get('spec')||'Product specifications available in store',sale:fd.get('sale')==='on'});if(image)p.image=image;saveProducts();renderProducts();closeModal();toast('Product updated successfully')};if(file&&file.size){let reader=new FileReader();reader.onload=()=>finish(reader.result);reader.readAsDataURL(file)}else finish('')}}
+
+function visitModal(){openModal(`<div class="modalHead"><div><span class="eyebrow">STORE VISIT</span><h2>Book a store visit</h2><p style="color:#777">Choose a convenient time to visit and view products offline.</p></div><button class="close" data-close>✕</button></div><form id="visitForm"><div class="formGrid"><label class="field"><span>Name</span><input required name="name" placeholder="Your name"></label><label class="field"><span>WhatsApp / Phone</span><input required name="phone" placeholder="10-digit number"></label><label class="field"><span>Preferred date</span><input required type="date" name="date"></label><label class="field"><span>Preferred time</span><select name="time"><option>10:00 AM – 12:00 PM</option><option>12:00 PM – 2:00 PM</option><option>2:00 PM – 4:00 PM</option><option>4:00 PM – 6:00 PM</option><option>6:00 PM – 8:00 PM</option></select></label><label class="field full"><span>What would you like to view?</span><input name="interest" placeholder="e.g. TV, refrigerator, sofa, bed"></label></div><button class="primary" style="width:100%;margin-top:16px">Request Store Visit</button></form></div>`);$('#visitForm').addEventListener('submit',e=>{e.preventDefault();closeModal();toast('Store visit request received — connect your real contact number in the live version.');});}
+</script>
+</body>
+</html>
